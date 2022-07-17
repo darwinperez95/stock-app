@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 
 const app= express()
@@ -9,7 +10,10 @@ res.send('<h1>Hola Mundo bueno!</h1>')
 
 })
 
-app.listen(4000, () => {
-    console.log('Servidor escuchando en el puerto 4000')
+const PORT = oricess.env.PORT || 4000
+
+
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto 4000  ${PORT}`)    
 })
 
