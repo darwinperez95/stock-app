@@ -10,7 +10,7 @@ res.send('<h1>Hola Mundo bueno sin .env!</h1>')
 
 })
 
-const PORT = oricess.env.PORT || 4000
+const PORT = process.env.PORT || 4000
 
 
 app.listen(PORT, () => {
