@@ -6,7 +6,7 @@ const app= express()
 app.get('/', (req, res) => {
 console.log("peticion recibida")
 
-res.send('<h1>Hola Mundo bueno!</h1>')
+res.send('<h1>Hola Mundo bueno sin .env!</h1>')
 
 })
 
